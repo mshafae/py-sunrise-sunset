@@ -20,10 +20,8 @@ Follow the steps and seek assistance from your instructor as necessary.
 
 1. Clone the repository to your computer
 1. Attempt to run the program `sunrise-sunset.py`
-
-`./sunrise-sunset.py "800 N State College Blvd, Fullerton, CA 92831" 2022-03-18`
-This will generate an error and not work because of the missing Python packages.
-
+    `./sunrise-sunset.py "800 N State College Blvd, Fullerton, CA 92831" 2022-03-18`<br/>
+    This will generate an error and not work because of the missing Python packages.
 1. Create a Python Virtual Environment
     `python3 -m venv env`
 1. Activate the Python Virtual Environment
