@@ -15,6 +15,8 @@ The sun will set at 2022-03-18 19:01:45.349124-07:00
 ```
 This means that the sun will rise on March 18, 2022 at 6:57 AM and set on March 18, 2022 at 7:01 PM.
 
+As a final step in the exercise, `pylint` is installed in the virtual environment. With `pylint` in the virtual environment, it can lint the project and know how to find the packages that are uniquely installed in the virtual environment.
+
 # Exercise
 Follow the steps and seek assistance from your instructor as necessary.
 
