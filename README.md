@@ -23,40 +23,22 @@ Follow the steps and seek assistance from your instructor as necessary.
 `./sunrise-sunset.py "800 N State College Blvd, Fullerton, CA 92831" 2022-03-18`
 This will generate an error and not work because of the missing Python packages.
 1. Create a Python Virtual Environment
-
 `python3 -m venv env`
-
 1. Activate the Python Virtual Environment
-
 `source env/bin/activate`
-
 1. Install the required Python packages with `pip`
-
-```
-pip install geopy
+`pip install geopy
 pip install python-dateutil
-pip install skyfield
-```
-
+pip install skyfield`
 1. Run the program with the correct command line arguments to verify that you have successfully.
-
 `./sunrise-sunset.py "800 N State College Blvd, Fullerton, CA 92831" 2022-03-18`
 The output will show that the sun will rise at 6:57 AM and set at 7:01 PM.
-
 1. Run `pylint` on `sunrise-sunset.py`
-
 This will generate errors because it cannot find the packages that are installed in the virtual environment.
-
 1. Install `pylint` into the virtual environment
-
 `pip install pylint`
-
 1. Deactivate the virtual environment
-
 `deactivate`
-
 1. Reactivate the virtuali environment. This will reload the environment and `pylint` will be able to see all the additional packages.
-
 `source env/bin/activate`
-
 1. Run `pylint` on `sunrise-sunset.py`
