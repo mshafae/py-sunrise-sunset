@@ -29,9 +29,9 @@ Follow the steps and seek assistance from your instructor as necessary.
 1. Activate the Python Virtual Environment<br/>
     `source env/bin/activate`
 1. Install the required Python packages with `pip`<br/>
-    `pip install geopy<br/>
-    pip install python-dateutil<br/>
-    pip install skyfield`
+    `pip install geopy`<br/>
+    `pip install python-dateutil`<br/>
+    `pip install skyfield`
 1. Run the program with the correct command line arguments to verify that you have successfully.<br/>
     `./sunrise-sunset.py "800 N State College Blvd, Fullerton, CA 92831" 2022-03-18`<br/>
     The output will show that the sun will rise at 6:57 AM and set at 7:01 PM.
