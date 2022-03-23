@@ -41,11 +41,10 @@ def main():
     times, event_status = almanac.find_discrete(
         events[0], events[1], almanac.sunrise_sunset(eph, spot)
     )
+    from_zone = tz.tzutc()
+    to_zone = tz.tzlocal()
     for time, status in zip(times.utc_datetime(), event_status):
-        from_zone = tz.tzutc()
-        to_zone = tz.tzlocal()
-        time = time.replace(tzinfo=from_zone)
-        local_time = time.astimezone(to_zone)
+        local_time = time.replace(tzinfo=from_zone).astimezone(to_zone)
         if status:
             print('The sun will rise at ', end='')
         else:
