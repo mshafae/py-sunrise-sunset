@@ -3,11 +3,11 @@
 
 This is a little exercise to walk you through the process of using a Python Virtual Environment.
 
-The included program, `sunrise-sunset.py`, takes two arguments. The first argument is an address, such as `800 N State College Blvd, Fullerton, CA 92831`. The second argument is a date given as the year, month, and day; for example 2022-03-18. The date must be expressed with dashes delimited each field, the year must be four digits, and the month and day must be two digits.
+The included program, `sunrise_sunset.py`, takes two arguments. The first argument is an address, such as `800 N State College Blvd, Fullerton, CA 92831`. The second argument is a date given as the year, month, and day; for example 2022-03-18. The date must be expressed with dashes delimited each field, the year must be four digits, and the month and day must be two digits.
 
 The program will calculate the time the sun will rise and set on the given day from the given address. Let's assume the you wish to calculate the sun rise and set time for March 18, 2022 from the address 800 N State College Blvd, Fullerton, CA 92831, then:
 ```
-(env) $ ./sunrise-sunset.py "800 N State College Blvd, Fullerton, CA 92831" 2022-03-18
+(env) $ ./sunrise_sunset.py "800 N State College Blvd, Fullerton, CA 92831" 2022-03-18
 The address you provided is 800 N State College Blvd, Fullerton, CA 92831
 The date you provided is 2022-03-18
 The sun will rise at 2022-03-18 06:57:44.995932-07:00
@@ -21,8 +21,8 @@ As a final step in the exercise, `pylint` is installed in the virtual environmen
 Follow the steps and seek assistance from your instructor as necessary.
 
 1. Clone the repository to your computer
-1. Attempt to run the program `sunrise-sunset.py`<br/>
-    `./sunrise-sunset.py "800 N State College Blvd, Fullerton, CA 92831" 2022-03-18`<br/>
+1. Attempt to run the program `sunrise_sunset.py`<br/>
+    `./sunrise_sunset.py "800 N State College Blvd, Fullerton, CA 92831" 2022-03-18`<br/>
     This will generate an error and not work because of the missing Python packages.
 1. Create a Python Virtual Environment<br/>
     `python3 -m venv env`
@@ -33,9 +33,9 @@ Follow the steps and seek assistance from your instructor as necessary.
     `pip install python-dateutil`<br/>
     `pip install skyfield`
 1. Run the program with the correct command line arguments to verify that you have successfully.<br/>
-    `./sunrise-sunset.py "800 N State College Blvd, Fullerton, CA 92831" 2022-03-18`<br/>
+    `./sunrise_sunset.py "800 N State College Blvd, Fullerton, CA 92831" 2022-03-18`<br/>
     The output will show that the sun will rise at 6:57 AM and set at 7:01 PM.
-1. Run `pylint` on `sunrise-sunset.py`<br/>
+1. Run `pylint` on `sunrise_sunset.py`<br/>
     This will generate errors because it cannot find the packages that are installed in the virtual environment.
 1. Install `pylint` into the virtual environment<br/>
     `pip install pylint`
@@ -43,4 +43,4 @@ Follow the steps and seek assistance from your instructor as necessary.
     `deactivate`
 1. Reactivate the virtuali environment. This will reload the environment and `pylint` will be able to see all the additional packages.<br/>
     `source env/bin/activate`
-1. Run `pylint` on `sunrise-sunset.py`
+1. Run `pylint` on `sunrise_sunset.py`
